@@ -1,0 +1,9 @@
+h1{
+    color: blue;
+    background-color: orange;
+    align-items: center;
+}
+
+h1::after {
+    content: url(images/desarrollo.png);
+}
