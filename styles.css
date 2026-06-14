@@ -7,3 +7,12 @@ h1{
 h1::after {
     content: url(images/desarrollo.png);
 }
+
+h2{
+    color: blue;
+    align-items: center;
+}
+
+h2::after {
+    content: url(images/desarrollo.png);
+}
