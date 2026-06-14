@@ -16,3 +16,8 @@ h2{
 h2::after {
     content: url(images/desarrollo.png);
 }
+
+iframe{
+    width: 100%;
+    height: 300px;
+}
