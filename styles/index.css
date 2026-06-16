@@ -1,3 +1,8 @@
+.contenedor{
+    display: grid;
+    grid-template-rows: auto auto auto auto;
+}
+
 h1{
     color: blue;
     background-color: orange;
@@ -5,7 +10,7 @@ h1{
 }
 
 h1::after {
-    content: url(images/desarrollo.png);
+    content: url(../images/desarrollo.png);
 }
 
 h2{
@@ -14,35 +19,33 @@ h2{
 }
 
 h2::after {
-    content: url(images/desarrollo.png);
+    content: url(../images/desarrollo.png);
 }
 
 h3{
     text-align: center;
 }
 
-iframe{
-    width: 100%;
-    height: 150px;
-    border: 1px solid black;
-}
-
 p{
     color: black;
-    text-align: center;
+    text-align: right;
     font-size: 20px;
 }
 
-a{
-    background-color: rgb(139, 85, 207);
-    color: white;
-    text-align: center;
-}
 
-input{
+.input1{
     border-radius: 5px;
     justify-content: center;
     align-items: center;
+    height: 35px;
+}
+
+.input2{
+    border-radius: 5px;
+    justify-content: center;
+    align-items: center;
+    height: 35px;
+    margin-top: 10px;
 }
 
 .btnEnviar{
@@ -50,6 +53,15 @@ input{
     color: blue;
     border-radius: 5px;
     border-color: blue;
+    margin-top: 20px;
+    height: 52px;
+}
+
+iframe{
+    width: 100%;
+    height: 150px;
+    border: 1px solid black;
+    margin-top: 60px;
 }
 
 .btnPagina{
@@ -57,11 +69,22 @@ input{
     font-size: 18px;
     border: none;
     margin-bottom: 25px;
+    height: 50px;
+    width: 250px;
 }
 
 .btnPagina:hover{
     background-color: white;
     color: rgb(6, 208, 252);
+}
+
+.aPagina{
+    margin-bottom: 5px;
+    height: 20px;
+    margin-top: 22px;
+    background-color: rgb(139, 85, 207);
+    color: white;
+    text-align: right;
 }
 
 .aPagina:active{
@@ -71,19 +94,31 @@ input{
 }
 
 img{
-    width: 100px;
-    height: 100px;
+    width: 50%;
+    height: 50%;
     border: 15px;
     border-style: solid;
     border-color: red;
+    padding: 15px;
 }
 
 .extremo{
     background-color: aqua;
 }
 
+.izquierda{
+    justify-items: right;
+}
+.derecha{
+    justify-items: left;
+}
+.centrado{
+    justify-items: center;
+}
+
 .centro{
     background-color: rgb(139, 85, 207);
+    justify-items: center;
 }
 
 th{
@@ -104,24 +139,27 @@ td{
 .medio{
     display: grid;
     grid-template-columns: 150px 150px auto 150px;
+    margin-top: 20px;
 }
 
 .inferior{
     display: grid;
-    grid-template-columns: auto auto auto;
+    grid-template-columns: 240px auto 240px;
 }
 
 .pCompetencia{
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px;
+    grid-template-rows: 80px 80px 80px 80px;
+    justify-items: center;
 }
 
 .interaccionUsuario{
     display: grid;
-    grid-template-rows: 20px 20px 20px 20px;
+    grid-template-rows: 40px 40px 40px 40px;
 }
 
 .enlaces{
     display: grid;
-    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-rows: 50px 30px 30px 30px 30px;
+    justify-items: end;
 }

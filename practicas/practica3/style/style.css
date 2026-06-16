@@ -1,0 +1,64 @@
+h1 {
+    color: blue;
+}
+
+h1::after{
+    content: url("../images/desarrollo.png");
+}
+h2 {
+    color: red;
+}
+
+h3 {
+    color: red;
+}
+
+.desarrolloWeb{
+    color: orange;
+    font-family: oblique;
+}
+
+.desarrolloWeb::selection{
+    color: yellow;
+    background-color: blue;
+}
+
+.marcadorLista{
+    color: fuchsia;
+    font-size: xx-large;
+}
+
+.enlace :hover {
+    background-color: aqua;
+    font-size: xx-large;
+}
+
+
+.definicion {
+    color: orange;
+    font-family: oblique;
+}
+.definicion::first-line{
+    color: black
+}
+
+iframe{
+    width: 100%;
+}
+
+.clic:active{
+    color: brown;
+    padding: 1rem;
+}
+
+.clicBoton:active{
+    background-color: aquamarine;
+    font-size: xx-large;
+    color: blue;
+}
+.parrafoEspecial{
+    border-color: yellow;
+    border-width: 10px;
+    font-family: solid;
+    background-color: azure;
+}
