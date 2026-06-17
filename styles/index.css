@@ -3,8 +3,6 @@
     grid-template-rows: auto auto auto auto;
 }
 
-
-
 h1{
     color: blue;
     background-color: orange;
@@ -39,6 +37,9 @@ p{
     flex-direction: column;
     align-items: flex-end;
     gap: 5px;
+    flex: 1 0 200px;
+    min-width: 0;
+    overflow: hidden;
 }
 
 .enlaces .aPagina{
@@ -46,6 +47,12 @@ p{
     margin-bottom: 5px;
 }
 
+.interaccionUsuario{
+    display: grid;
+    grid-template-rows: 40px 40px 40px 40px;
+    flex: 1 0 200px;
+    min-height: 330px;
+}
 
 .input1{
     border-radius: 5px;
@@ -80,6 +87,13 @@ iframe{
     margin-top: 60px;
 }
 
+.pCompetencia{
+    display: grid;
+    grid-template-rows: 80px 80px 80px 80px;
+    justify-items: center;
+    flex: 1 0 200px;
+}
+
 .btnPagina{
     background-color: rgb(6, 208, 252);
     font-size: 18px;
@@ -107,19 +121,23 @@ iframe{
     background-color: white;
     font-size: xx-large;
     color: rgb(139, 85, 207);
+    margin-bottom: 5px;
+    height: auto;
 }
 
 img{
-    width: 50%;
-    height: 50%;
-    border: 15px;
+    width: 70px;
+    height: 65px;
+    border: 10px;
     border-style: solid;
     border-color: red;
     padding: 15px;
+    margin-left: 5px;
 }
 
 .extremo{
     background-color: aqua;
+    flex: 0 0 240px;
 }
 
 .izquierda{
@@ -135,6 +153,7 @@ img{
 .centro{
     background-color: rgb(139, 85, 207);
     justify-items: center;
+    flex: 1 0 200px;
 }
 
 th{
@@ -148,30 +167,31 @@ td{
 }
 
 .superior{
-    display: grid;
-    grid-template-columns: auto auto auto;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 .medio{
-    display: grid;
-    grid-template-columns: 150px 150px auto 150px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
     margin-top: 20px;
 }
 
+.medio img{
+    flex: 0 0 150px;
+}
+
+.medio table{
+    flex: 1 0 200px;
+}
+
 .inferior{
-    display: grid;
-    grid-template-columns: 240px auto 240px;
-}
-
-.pCompetencia{
-    display: grid;
-    grid-template-rows: 80px 80px 80px 80px;
-    justify-items: center;
+    display: flex;
+    flex-wrap: wrap;
 }
 
 
-.interaccionUsuario{
-    display: grid;
-    grid-template-rows: 40px 40px 40px 40px;
-}
+
+
 

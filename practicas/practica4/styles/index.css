@@ -1,4 +1,6 @@
 .contenedor{
+    display: flex;
+    flex-direction: column;
     text-align: center;
 }
 
@@ -9,7 +11,11 @@ h1{
 .botones{
     display: grid;
     grid-template-columns: auto auto;
-    justify-items: center;
+    gap: 8px;
+}
+
+.botones a{
+    width: 100%;
 }
 
 .btnPagina{
@@ -18,12 +24,10 @@ h1{
     border: none;
     margin-bottom: 25px;
     height: 50px;
-    width: 250px;
+    width: 100%;
 }
 
 .btnPagina:hover{
     background-color: white;
     color: rgb(6, 208, 252);
 }
-
-
